@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando de Barros">
+    <title>Convert Text to Binary</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form class="form" id="converter-form">
+                <div class="input-container">
+                    <label>Text to convert</label>
+                    <textarea required id="text-to-convert"
+                    rows="15" cols="60"></textarea>
+                </div>
+            </form>        
+        </div>
+        <button type="submit">Converter</button>
+    </div>
+    <div class="modal-wrapper visible">
+        <div class="modal">
+            <div class="modal-header">
+                <h1>O resultado da conversão abaixo:</h1>
+            </div>
+            <div class="modal-body">
+                <output id="conversion-result"></output>
+            </div>
+            <footer class="modal-footer">
+                <div class="modal-buttons">
+                    <button class="modal-button">Fechar</button>
+                    <button class="modal-button">Copiar</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="alert-wrapper visible error">
+        <div class="alert-container">
+            <span id="alert-message">Error</span>
+        </div>
+    </div>
+</body>
+</html>
