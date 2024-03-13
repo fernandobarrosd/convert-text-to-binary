@@ -1,0 +1,1 @@
+# Convert Text to Binary Code
